@@ -13,10 +13,10 @@
     <div>
     <h1 class="en-main-text">Happy Adha Eid</h1>
     <h1 class="ar-main-text">عيد اضحي سعيد</h1>
-    <button id="celebration-button">Celebrate!</button>
+    <button id="celebration-button" class="button">Celebrate!</button>
     <div class="options-div">
-        <button id="donation-button">Donate Cash</button>
-        <button id="greeting-cards-button">Greet Someone</button>
+        <button id="donation-button" class="button">Donate Cash</button>
+        <button id="greeting-cards-button" class="button">Greet Someone</button>
     </div>
         <div id="donation-section">
             <h1>Donate to someone and share kindness!</h1>
@@ -29,7 +29,14 @@
                 <div class="visa-donation-container"></div>
             </div>
         </div>
-        <div id="greeting-section"></div>
+        <div id="greeting-section">
+            <h1>Greet everyone!</h1>
+            <label form="name-field">Name: </label>
+            <input type="text" id="name-field" placeholder="name the one u wanna greet!">
+            <label form="greet-field">Message: </label>
+            <textarea id="greet-field" placeholder="Enter the message to him/her"></textarea>
+            <button type="submit" class="button">Send</button>
+        </div>
     <footer id="website-footer">Made with 🩵 by <span class="author-name">@Aref</span> - 2026 &copy;copyright All Rights Reserved!</footer>
     </div>
     <script type="module" src="script.js"></script>

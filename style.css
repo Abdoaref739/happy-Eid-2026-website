@@ -21,6 +21,7 @@ div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 body{
     user-select: none;
@@ -34,7 +35,7 @@ body{
     font-family: "en-MainText";
     font-size: 90px;
     font-weight: 300;
-    margin-top: 140px;
+    margin-top: 50px;
 }
 .ar-main-text{
     font-family: "ar-MainText", sans-serif;
@@ -62,7 +63,7 @@ body{
     margin-top: 100px;
     z-index: -1;
 }
-#celebration-button{
+.button{
     width: 300px;
     height: 55px;
     color: rgb(0, 99, 99);
@@ -71,8 +72,10 @@ body{
     font-size: 25px;
     font-family: "en-MainText", sans-serif;
     border-radius: 10px;
-    margin-top: 30px;
     cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+}
+#celebration-button{
+    margin-top: 30px;
 }
 #celebration-button:hover{
     border-bottom-width: 8px;
@@ -106,6 +109,8 @@ body{
     margin-top: -200px;
 }
 .donation-platform{
+    user-select: none;
+    -webkit-user-drag: none;
     width: 100%;
     height: 50px;
     display: flex;
@@ -120,7 +125,6 @@ body{
     cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
     margin-left: 20px;
 }
-
 
 #greeting-cards-button{
     width: 50%;
@@ -138,6 +142,42 @@ body{
 #greeting-cards-button:hover{
      border-bottom-width: 8px;
 }
+#greeting-section{
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 50%;
+    height: 450px;
+    border: 3px solid rgb(0, 99, 99);
+    margin-top: 50px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+#greeting-section > h1 {
+    font-family: "en-MainText", sans-serif;
+}
+#greeting-section > div {
+    width: 100%;
+    height: 80%;
+}
+#greeting-section > button{
+    margin-top: 0px;
+
+}
+
+label{
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+}
+#name-field{
+    width: 70%;
+    height: 40px;
+}
+#greet-field{
+    width: 70%;
+    height: 200px;
+}
+
 .options-div{
     display: flex;
     flex-direction: row;
