@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "en-MainText";
+    src: url(./fonts/Super\ Nugget.ttf);
+}
+@font-face {
+    font-family: "ar-MainText";
+    src: url(./fonts/alfont_com_KOMedia-Black.otf) format('opentype');
+
+}
+@font-face {
+    font-family: "footerFont";
+    src: url(./fonts/Bright\ Miracle.ttf);
+
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    user-select: none;
+    -webkit-user-drag: none;
+    background-color: #ffc94b;
+    color: rgb(0, 99, 99);
+    cursor: url("./icons8-cursor-32\ \(1\).png"), auto;
+    overflow-x: hidden;
+}
+.en-main-text{
+    font-family: "en-MainText";
+    font-size: 90px;
+    font-weight: 300;
+    margin-top: 140px;
+}
+.ar-main-text{
+    font-family: "ar-MainText", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+.circle1{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #fcc138;
+    border-radius: 400px;
+    margin-left: 250px;
+    margin-top: 100px;
+    z-index: -1;
+}
+.circle2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #fcc138;
+    border-radius: 400px;
+    margin-left: 810px;
+    margin-top: 100px;
+    z-index: -1;
+}
+#celebration-button{
+    width: 300px;
+    height: 55px;
+    color: rgb(0, 99, 99);
+    background-color: transparent;
+    border: 3px solid #006363;
+    font-size: 25px;
+    font-family: "en-MainText", sans-serif;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+}
+#celebration-button:hover{
+    border-bottom-width: 8px;
+}
+#donation-button{
+    width: 50%;
+    height: 55px;
+    color: rgb(0, 99, 99);
+    background-color: transparent;
+    border: 3px solid rgb(0, 99, 99);
+    font-size: 25px;
+    font-family: "en-MainText", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+}
+#donation-button:hover{
+    border-bottom-width: 8px;
+}
+#donation-section{
+    width: 50%;
+    height: 400px;
+    border: 3px solid rgb(0, 99, 99);
+    margin-top: 50px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+#donation-section > h1{
+    font-family: "en-MainText", sans-serif;
+    margin-top: -200px;
+}
+.donation-platform{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.donation-platform > img{
+    width: 80px;
+    height: auto;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+    margin-left: 20px;
+}
+
+
+#greeting-cards-button{
+    width: 50%;
+    height: 55px;
+    color: rgb(0, 99, 99);
+    background-color: transparent;
+    border: 3px solid rgb(0, 99, 99);
+    font-size: 22px;
+    font-family: "en-MainText", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+}
+#greeting-cards-button:hover{
+     border-bottom-width: 8px;
+}
+.options-div{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 55px;
+    margin-top: 20px;
+}
+#website-footer{
+    font-family: "en-MainText", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 120px;
+}
+.author-name{
+    font-family: "footerFont", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+#sheep-img{
+    position: absolute;
+    z-index: -1;
+    width: 350px;
+    height: auto;
+    transform: scaleX(-1);
+    margin-left: 190px;
+    rotate: -10deg;
+}
