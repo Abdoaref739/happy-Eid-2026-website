@@ -31,6 +31,27 @@ body{
     cursor: url("./icons8-cursor-32\ \(1\).png"), auto;
     overflow-x: hidden;
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+header > button{
+    color: #006363;
+    font-size: 35px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+    margin-left: 90%;
+    margin-top: 20px;
+}
+header > button:hover{
+    transform: scale(102%);
+    transition: 0.7s ease;
+}
 .en-main-text{
     font-family: "en-MainText";
     font-size: 90px;
@@ -78,7 +99,8 @@ body{
     margin-top: 30px;
 }
 #celebration-button:hover{
-    border-bottom-width: 8px;
+    transform: scale(103%);
+    transition: 0.7s ease;
 }
 #donation-button{
     width: 50%;
@@ -92,21 +114,23 @@ body{
     cursor: pointer;
     cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
 }
-#donation-button:hover{
-    border-bottom-width: 8px;
+#donation-button:hover{ 
+    transform: scale(103%);
+    transition: 0.7s ease;
 }
 #donation-section{
     width: 50%;
-    height: 400px;
+    height: 500px;
     border: 3px solid rgb(0, 99, 99);
-    margin-top: 50px;
     border-radius: 10px;
-    display: none;
+        display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 #donation-section > h1{
     font-family: "en-MainText", sans-serif;
-    margin-top: -200px;
+    margin-top: 15px;
 }
 .donation-platform{
     user-select: none;
@@ -125,6 +149,89 @@ body{
     cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
     margin-left: 20px;
 }
+.visa-donation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 0px;
+}
+.visa-donation-container > select{
+    width: 73%;
+    height: 43px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+
+}
+.visa-donation-container > button{
+    width: 50%;
+    height: 55px;
+    color: rgb(0, 99, 99);
+    background-color: transparent;
+    border: 3px solid rgb(0, 99, 99);
+    font-size: 25px;
+    font-family: "en-MainText", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
+}
+.visa-donation-container > button:hover{
+    transform: scale(103%);
+    transition: 0.7s ease;
+}
+#card-name{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+}
+#card-number{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+}
+.visa-donation-container > div{
+    width: 76%;
+    flex-direction: row;
+    height: fit-content;
+}
+.visa-donation-container > div > input {
+    width: 42%;
+    height: 40px;
+    margin-top: -110px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 
 #greeting-cards-button{
     width: 50%;
@@ -140,13 +247,14 @@ body{
     cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
 }
 #greeting-cards-button:hover{
-     border-bottom-width: 8px;
+     transform: scale(103%);
+    transition: 0.7s ease;
 }
 #greeting-section{
     user-select: none;
     -webkit-user-drag: none;
     width: 50%;
-    height: 450px;
+    height: 460px;
     border: 3px solid rgb(0, 99, 99);
     margin-top: 50px;
     border-radius: 10px;
@@ -155,27 +263,47 @@ body{
 }
 #greeting-section > h1 {
     font-family: "en-MainText", sans-serif;
+    font-size: 30px;
 }
 #greeting-section > div {
     width: 100%;
     height: 80%;
 }
 #greeting-section > button{
-    margin-top: 0px;
+    margin-top: 20px;
 
 }
 
-label{
-    font-size: 20px;
-    font-family: "en-MainText", sans-serif;
-}
 #name-field{
     width: 70%;
     height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+}
+#name-field::placeholder{
+    color: #00636391;
 }
 #greet-field{
     width: 70%;
     height: 200px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+#greet-field::placeholder{
+    color: #00636391;
 }
 
 .options-div{
@@ -189,7 +317,7 @@ label{
     font-family: "en-MainText", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    margin-top: 120px;
+    margin-top: 70px;
 }
 .author-name{
     font-family: "footerFont", sans-serif;
