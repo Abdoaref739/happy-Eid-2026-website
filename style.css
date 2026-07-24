@@ -119,9 +119,11 @@ header > button:hover{
     transition: 0.7s ease;
 }
 #donation-section{
+    display: none;
     width: 50%;
     height: 500px;
     border: 3px solid rgb(0, 99, 99);
+    box-shadow: 12px 6px 0 #006363;
     border-radius: 10px;
         display: flex;
     justify-content: center;
@@ -132,23 +134,7 @@ header > button:hover{
     font-family: "en-MainText", sans-serif;
     margin-top: 15px;
 }
-.donation-platform{
-    user-select: none;
-    -webkit-user-drag: none;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.donation-platform > img{
-    width: 80px;
-    height: auto;
-    cursor: url("./icons8-hand-cursor-30\ \(1\).png"), pointer;
-    margin-left: 20px;
-}
+
 .visa-donation-container{
     display: flex;
     justify-content: center;
@@ -254,8 +240,9 @@ header > button:hover{
     user-select: none;
     -webkit-user-drag: none;
     width: 50%;
-    height: 460px;
+    height: 550px;
     border: 3px solid rgb(0, 99, 99);
+    box-shadow: 12px 6px 0 #006363;
     margin-top: 50px;
     border-radius: 10px;
     display: none;
@@ -263,7 +250,7 @@ header > button:hover{
 }
 #greeting-section > h1 {
     font-family: "en-MainText", sans-serif;
-    font-size: 30px;
+    font-size: 45px;
 }
 #greeting-section > div {
     width: 100%;
@@ -274,7 +261,7 @@ header > button:hover{
 
 }
 
-#name-field{
+#sender-email-field{
     width: 70%;
     height: 40px;
     margin-top: 20px;
@@ -286,12 +273,27 @@ header > button:hover{
     font-family: "en-MainText", sans-serif;
     padding-left: 10px;
 }
-#name-field::placeholder{
+#sender-email-field::placeholder{
+    color: #00636391;
+}
+#reciever-email-field{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #006363;
+    border-radius: 10px;
+    color: #006363;
+    font-size: 20px;
+    font-family: "en-MainText", sans-serif;
+    padding-left: 10px;
+}
+#reciever-email-field::placeholder{
     color: #00636391;
 }
 #greet-field{
     width: 70%;
-    height: 200px;
+    height: 150px;
     margin-top: 20px;
     background-color: transparent;
     border: 3px solid #006363;
